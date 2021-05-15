@@ -2,11 +2,21 @@ package com.wine.betest.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "LOJA")
 public class Loja {
-	@Column(name = "CODIGO_LOJA", unique = true)
-	private String codigoLoja, faixaInicio, faixaFim;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "ID")
+	private long id;
+	@Column(name = "CODIGO_LOJA")
+	private String codigoLoja;
+	private String faixaInicio, faixaFim;
 
 	public Loja() {
 	}
