@@ -35,6 +35,14 @@ public class Loja {
 		this.faixaInicio = faixaInicio;
 	}
 
+	public void setFaixaFim(String faixaFim) {
+		this.faixaFim = faixaFim;
+	}
+
+	public void setCodigoLoja(String codigoLoja) {
+		this.codigoLoja = codigoLoja;
+	}
+
 	public long getId() {
 		return id;
 	}
