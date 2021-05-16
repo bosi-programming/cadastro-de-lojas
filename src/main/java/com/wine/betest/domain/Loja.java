@@ -16,9 +16,9 @@ public class Loja {
 	private long id;
 	@Column(name = "CODIGO_LOJA", nullable = false)
 	private String codigoLoja;
-	@Column(name = "FAIXA_INICIO", nullable = false)
+	@Column(name = "FAIXA_INICIO", nullable = false, length = 9)
 	private String faixaInicio;
-	@Column(name = "FAIXA_FIM", nullable = false)
+	@Column(name = "FAIXA_FIM", nullable = false, length = 9)
 	private String faixaFim;
 
 	public Loja() {
