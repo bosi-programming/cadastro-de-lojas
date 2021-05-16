@@ -8,15 +8,18 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "LOJA")
+@Table(name = "loja")
 public class Loja {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "ID")
 	private long id;
-	@Column(name = "CODIGO_LOJA")
+	@Column(name = "CODIGO_LOJA", nullable = false)
 	private String codigoLoja;
-	private String faixaInicio, faixaFim;
+	@Column(name = "FAIXA_INICIO", nullable = false)
+	private String faixaInicio;
+	@Column(name = "FAIXA_FIM", nullable = false)
+	private String faixaFim;
 
 	public Loja() {
 	}
@@ -26,6 +29,14 @@ public class Loja {
 		this.codigoLoja = codigoLoja;
 		this.faixaInicio = faixaInicio;
 		this.faixaFim = faixaFim;
+	}
+
+	public void setFaixaInicio(String faixaInicio) {
+		this.faixaInicio = faixaInicio;
+	}
+
+	public long getId() {
+		return id;
 	}
 
 	public String getCodigoLoja() {

@@ -1,7 +1,13 @@
 package com.wine.betest.domain;
 
-import org.springframework.data.repository.CrudRepository;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource
-public interface LojaRepository extends CrudRepository <Loja, Long> {}
+public interface LojaRepository extends JpaRepository<Loja, Long> {
+	Optional<Loja> findByFaixaInicioLessThanEqualAndFaixaFimGreaterThanEqual(String cep, String cep2);
+
+	Optional<Iterable<Loja>> findByCodigoLoja(String codigoLoja);
+}
