@@ -1,4 +1,4 @@
-package com.wine.betest.domain;
+package com.wine.betest.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

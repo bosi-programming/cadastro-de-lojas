@@ -3,7 +3,7 @@ package com.wine.betest.dto;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.wine.betest.domain.Loja;
+import com.wine.betest.model.Loja;
 
 public class LojaDto {
 	private Long id;

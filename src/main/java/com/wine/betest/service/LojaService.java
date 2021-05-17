@@ -12,8 +12,8 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 import com.wine.betest.dto.LojaDto;
-import com.wine.betest.domain.Loja;
-import com.wine.betest.domain.LojaRepository;
+import com.wine.betest.model.Loja;
+import com.wine.betest.model.LojaRepository;
 
 @Service
 public class LojaService {

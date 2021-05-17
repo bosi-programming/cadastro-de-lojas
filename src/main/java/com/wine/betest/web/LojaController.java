@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.wine.betest.domain.LojaRepository;
+import com.wine.betest.model.LojaRepository;
 import com.wine.betest.dto.LojaDto;
 import com.wine.betest.service.LojaService;
 

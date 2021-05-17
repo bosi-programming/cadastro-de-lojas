@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 
-import com.wine.betest.domain.*;
+import com.wine.betest.model.*;
 
 @SpringBootApplication
 public class BeTestApplication {
