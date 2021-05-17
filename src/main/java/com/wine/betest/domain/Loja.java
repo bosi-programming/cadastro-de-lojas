@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.wine.betest.dto.LojaDto;
+
 @Entity
 @Table(name = "loja")
 public class Loja {
@@ -22,6 +24,13 @@ public class Loja {
 	private String faixaFim;
 
 	public Loja() {
+	}
+
+	public Loja(LojaDto newLoja) {
+		super();
+		this.codigoLoja = newLoja.getCodigoLoja();
+		this.faixaInicio = newLoja.getFaixaInicio();
+		this.faixaFim = newLoja.getFaixaFim();
 	}
 
 	public Loja(String codigoLoja, String faixaInicio, String faixaFim) {
